@@ -1,0 +1,41 @@
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery {
+  display: flex;
+  max-width: 1128px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gallery-item {
+  width: calc((100% - 24px * 2) / 3);
+  height: 200px;
+  transition: transform 250ms ease;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.04);
+}
+
+.gallery-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
